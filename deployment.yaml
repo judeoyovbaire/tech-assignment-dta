@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: ejlvm/hello-world:latest
+        image: <your-dockerhub-username>/hello-world:latest
         ports:
         - containerPort: 5500
 ---
