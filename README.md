@@ -55,7 +55,7 @@ To run the application locally using Docker:
     docker run -p 5500:5500 hello-world
     ```
 
-3. Access the application at [http://localhost:5000](http://localhost:5000).
+3. Access the application at [http://localhost:5500](http://localhost:5500).
 
 ## Deploying to Kubernetes
 
