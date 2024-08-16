@@ -6,7 +6,7 @@ COPY . /app
 
 RUN pip install Flask
 
-EXPOSE 5000
+EXPOSE 5500
 
 ENV NAME World
 

@@ -14,7 +14,7 @@ This is a simple Flask-based web server that alternates between displaying "Hell
 ## Prerequisites
 
 - Docker installed on your machine.
-- Kubernetes cluster (Minikube, Docker Desktop, or a cloud-based Kubernetes cluster).
+- Minikube installed (You can use any other cloud-based Kubernetes cluster).
 - kubectl configured to interact with your Kubernetes cluster.
 - A Docker Hub account (or any other container registry).
 
@@ -52,7 +52,7 @@ To run the application locally using Docker:
 2. Run the Docker container:
 
     ```bash
-    docker run -p 5000:5000 hello-world
+    docker run -p 5500:5500 hello-world
     ```
 
 3. Access the application at [http://localhost:5000](http://localhost:5000).
@@ -83,7 +83,15 @@ To deploy the application to a Kubernetes cluster:
     kubectl get services
     ```
 
-   Access the application via the external IP provided.
+5. Access the application service via the Minikube service, run:
+
+    ```bash
+    minikube service <service-name>
+    ```
+   OR
+    ```bash
+    minikube service <service-name> --url
+    ```
 
 ## Usage
 
